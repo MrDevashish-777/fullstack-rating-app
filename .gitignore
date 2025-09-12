@@ -7,6 +7,7 @@ yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 package-lock.json
+
 yarn.lock
 pnpm-lock.yaml
 
@@ -42,6 +43,7 @@ dump.rdb
 .vscode/
 .idea/
 *.swp
+.zencoder
 *.swo
 *.swn
 *.bak
