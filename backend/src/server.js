@@ -8,6 +8,7 @@ const storeRoutes = require('./routes/stores');
 const ratingRoutes = require('./routes/ratings');
 const usersRoutes = require('./routes/users');
 const adminRoutes = require('./routes/admin');
+const ownerRoutes = require('./routes/owner');
 
 const app = express();
 app.use(cors());
@@ -16,9 +17,10 @@ app.use(express.json());
 // routes
 app.use('/api/auth', authRoutes);
 app.use('/api/stores', storeRoutes);
-app.use('/api/ratings', ratingRoutes); // alternative path
+app.use('/api/ratings', ratingRoutes);
 app.use('/api/users', usersRoutes);
 app.use('/api/admin', adminRoutes);
+app.use('/api/owner', ownerRoutes);
 
 const PORT = process.env.PORT || 4000;
 
